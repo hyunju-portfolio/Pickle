@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Regular-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: #000;
+    font-size: 50px;
+}
+
+/* 내비 */
+
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1 {
+    display: flex;
+}
+
+.nav1>li>a {
+    display: block;
+    margin: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav2 {
+    display: flex;
+    gap: 20px;
+    color: #333;
+}
+
+.nav1>li:hover>a {
+    color: #499D22;
+}
+
+.nav2 a:hover {
+    text-decoration: 1px #23A7E3 underline;
+    color: #23A7E3;
+}
+
+/* 서브내비 */
+.sub {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+
+.sub a {
+    display: block;
+    padding: 20px 30px;
+    color: #000;
+    border-bottom: 1px solid #999;
+    font-weight: 500;
+}
+
+.nav1>li {
+    position: relative;
+}
+
+.sub a:hover {
+    background-color: #000;
+    color: #499D22;
+}
+
+.nav1 li:hover .sub {
+    display: block;
+}
+
+/* 서브내비 */
+
+/* 내비 */
+
+/* 탑 텍스트 */
+.top_text_flex{
+    width: 1320px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.top_text_flex p{
+    color: #666;
+    text-align: right;
+}
+/* 탑 텍스트 */
+
+/* event 배너 */
+.event_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../event_images/event_banner.png) no-repeat center top / cover;
+    height: 654px;
+}
+.event_banner h1{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.3;
+    padding-bottom: 30px;
+}
+.event_banner p{
+    color: #fff;
+}
+/* event 배너 */
+
+/* event 내용 */
+.box1{
+    width: 1320px;
+    margin: 210px auto 0;
+}
+.tap{
+    display: flex;
+    margin-bottom: 85px;
+    gap: 20px;
+}
+.tap a{
+    font-size: 30px;
+}
+.tap_black{
+    border: #000 1px solid;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+.tap_black:hover,
+.tap_black.active{
+    background-color: #000;
+    color: #fff;
+}
+.tap_green{
+    border: #000 1px solid;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+.tap_green:hover,
+.tap_green.active{
+    background-color: #499D22;
+    color: #fff;
+    border: 1px solid #499D22;
+}
+.tap_blue{
+    border: #000 1px solid;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+.tap_blue:hover,
+.tap_blue.active{
+    background-color: #23A7E3;
+    color: #fff;
+    border: 1px solid #23A7E3;
+}
+.tap_lightgreen{
+    border: #000 1px solid;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+.tap_lightgreen:hover,
+.tap_lightgreen.active{
+    background-color: #CDD56D;
+    border: 1px solid #CDD56D;
+}
+.box1_in{
+    display: flex;
+    gap: 0 31px;
+    flex-wrap: wrap;
+}
+.box1_in .event1{
+    display: block;
+}
+.box1_1{
+    color: #666;
+    margin-top: 20px;
+}
+.box1_2 a{
+    font-size: 22px;
+    font-weight: 700;
+    color: #23A7E3;
+}
+.box1_2{
+    margin: 15px 0 0 0;
+}
+.box1_3{
+    font-size: 18px;
+    margin: 10px 0 85px 0;
+}
+.box1_in dl dt{
+    overflow: hidden;
+}
+.box1_in dl:hover .event1{
+    transform: scale(1.2, 1.2);
+    text-decoration: underline;
+}
+.box1_in dl:hover .box1_2{
+    text-decoration: underline #23A7E3;
+}
+.box1_in dl dt .event1{
+    display: block;
+    transition: 0.8s;
+    width: 419px;
+    height: 433px;
+}
+.box1_in dl dt div{
+    position: relative;
+}
+.e_po1{
+    position: relative;
+}
+.box1_in .ing1{
+    width: 106px;
+    height: 49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.e_po2{
+    position: relative;
+}
+.box1_in .ad1{
+    width: 106px;
+    height: 49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.e_po3{
+    position: relative;
+}
+.box1_in .ing2{
+    width: 106px;
+    height: 49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.e_po4{
+    position: relative;
+}
+.box1_in .end1{
+    width: 106px;
+    height: 49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.e_po5{
+    position: relative;
+}
+.box1_in .end2{
+    width: 106px;
+    height: 49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.e_po6{
+    position: relative;
+}
+.box1_in .ing3{
+    width: 106px;
+    height: 49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* event 내용 */
+
+/* 번호 */
+.page-nav {
+    text-align: center;
+    margin: 100px 0 210px 0;
+}
+
+.page-nav a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 15px;
+    text-decoration: none;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    color: #333;
+}
+
+.page-nav .page1 {
+    border: 1px solid #499D22;
+}
+
+.page-nav a:hover {
+    text-decoration: underline;
+    
+}
+
+.page-nav .prev,
+.page-nav .next {
+    font-weight: bold;
+}
+/* 번호 */
+
+
+/* footer */
+footer {
+    background-color: #333;
+}
+
+.footer_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 110px; */
+    padding: 85px 0 70px 0;
+}
+
+.footer_in img {
+    margin-top: 25px;
+}
+
+.footer_text {
+    display: flex;
+
+}
+
+.footer_left_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left_top li {
+    font-size: 20px;
+    color: #999;
+}
+
+.footer_left_top a {
+    color: #999;
+}
+
+.footer_left_top a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer_left_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left_bottom a {
+    opacity: 0.4;
+}
+
+.footer_left_bottom a:hover {
+    opacity: 1;
+}
+
+.footer_right {
+    color: #999;
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+/* footer */

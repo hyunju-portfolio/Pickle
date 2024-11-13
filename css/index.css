@@ -1,0 +1,898 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Regular-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: #000;
+    font-size: 70px;
+}
+
+/* 내비 */
+header {
+    border-bottom: 2px solid #000;
+}
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1 {
+    display: flex;
+}
+
+.nav1>li>a {
+    display: block;
+    margin: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav2 {
+    display: flex;
+    gap: 20px;
+    color: #333;
+}
+
+.nav1>li:hover>a {
+    color: #499D22;
+}
+
+.nav2 a:hover {
+    text-decoration: 1px #23A7E3 underline;
+    color: #23A7E3;
+}
+
+/* 서브내비 */
+.sub {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+
+.sub a {
+    display: block;
+    padding: 20px 30px;
+    color: #000;
+    border-bottom: 1px solid #999;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.nav1>li {
+    position: relative;
+}
+
+.sub a:hover {
+    background-color: #000;
+    color: #499D22;
+}
+
+.nav1 li:hover .sub {
+    display: block;
+}
+
+/* 서브내비 */
+
+/* 내비 */
+
+/* 스몰 배너 */
+.s_b img {
+    width: 100%;
+    display: block;
+    /* 슬라이드 효과 넣어야함 */
+}
+
+/* 슬라이드 꾸미기 */
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+.slide .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/*이동버튼 영역 색상 바꾸기*/
+.slide .swiper-button-prev,
+.slide .swiper-button-next {
+    color: pink;
+}
+
+/*이동버튼 영역 호버 시 색상 바꾸기*/
+.slide .swiper-button-prev:hover,
+.slide .swiper-button-next:hover {
+    color: purple;
+}
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.slide .swiper-pagination-bullet {
+    background: #499D22;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.slide .swiper-pagination-bullet-active {
+    opacity: 0.8;
+}
+
+/* 블릿버튼 위치 */
+.slide .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0px;
+}
+
+/* 스몰 배너 */
+
+/* 메인 배너 */
+.m_b1 img {
+    width: 100%;
+    display: block;
+    /* 나중에 영상으로 교체 */
+}
+
+.m_b2 {
+    background-color: #000;
+    padding: 25px;
+    font-size: 30px;
+}
+
+.m_b2 ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.m_b2 li {
+    color: #fff;
+}
+
+/* 메인 배너 */
+
+/* con */
+/* 박스1 */
+.box1 {
+    padding: 210px 0;
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.box1 p {
+    font-size: 70px;
+}
+
+.box1 span {
+    border: #000 6px solid;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-right: -19px;
+}
+
+.box1_black {
+    background-color: #000;
+}
+
+.text_left {
+    margin: 40px 0 0 200px
+}
+
+.text_right {
+    margin-right: 16px;
+    margin-top: 143px;
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    color: #499D22;
+}
+
+.box1_b {
+    color: #000;
+}
+
+.r_text2 {
+    position: absolute;
+    left: 936px;
+}
+
+/* 박스1 */
+
+/* 박스2 */
+.box2 {
+    background-color: #499D22;
+}
+
+.box2_in {
+    width: 1320px;
+    margin: auto;
+    padding: 85px 0;
+}
+
+.box2_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2_text_in {
+    font-weight: 800;
+    font-size: 20px;
+
+}
+
+.box2 h1 {
+    color: #fff;
+    font-size: 70px;
+    padding-bottom: 85px;
+}
+
+.box2_text p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 550px;
+}
+
+.box2_text a {
+    color: #fff;
+    font-weight: 200;
+    padding: 15px 60px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.box2_text a:hover {
+    background-color: #fff;
+    color: #499D22;
+}
+
+.box2_img {
+    width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box2_img img {
+    /* border-radius: 5px; */
+    clip-path: inset(0 round 10px);
+    transition: all 0.8s;
+}
+
+.box2_img img:hover {
+    clip-path: inset(3% round 50%);
+}
+
+.box2_img dd {
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* 박스2 */
+
+/* 박스3 */
+.box3 {
+    font-size: 75px;
+    color: #fff;
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 210px 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.box3 .box3_track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 50s linear infinite;
+    background-color: #000;
+}
+
+.box2_text {
+    color: #fff;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* 박스3 */
+
+/* 박스4 */
+.box4 {
+    overflow: hidden;
+    margin-bottom: 110px;
+}
+
+.box4_in {
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.box4 h1 {
+    margin: 110px 0 85px 0;
+}
+
+.box4_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box4_text p {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 120px;
+}
+
+.mySwiper {
+    position: absolute;
+    right: -290px;
+}
+
+.box4_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box4_top img {
+    padding: 20px 0 0 20px;
+}
+
+.box4_top p {
+    padding: 30px 30px 0 0;
+    color: #fff;
+}
+
+.box4_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box4_bottom h2 {
+    padding: 40px 0 0 20px;
+    color: #fff;
+}
+
+.box4_bottom span {
+    padding: 20px 30px 0 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper .swiper-slide {
+    /* text-align: ; */
+    font-size: 18px;
+    background: #fff;
+    width: 413px;
+    height: 255px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper .swiper-slide img {
+    display: block;
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+}
+
+.mySwiper .swiper-slide {
+    width: 413px;
+    height: 255px;
+    background-color: #000;
+    border-radius: 25px;
+}
+
+.box4_text .swiper-button-next,
+.box4_text .swiper-button-prev {
+    position: static;
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+}
+
+.swiper-button-next:after {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 25px 20px 35px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev:after {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 35px 20px 25px;
+    border-radius: 50%;
+}
+
+/* 박스4 */
+
+/* 박스5 */
+.box5 {
+    width: 1320px;
+    margin: auto;
+}
+
+.box5 h1 {
+    margin-top: 210px;
+    margin-bottom: 210px;
+}
+
+.box5 ul {
+    margin-bottom: 210px;
+    position: relative;
+}
+
+.box5_flex1 {
+    display: flex;
+    gap: 200px;
+}
+
+.box5_flex2 {
+    display: flex;
+    margin-left: 435px;
+    gap: 200px;
+}
+
+.box5_flex3 {
+    display: flex;
+    gap: 200px;
+}
+
+.box5 span {
+    background-color: #000;
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+.box5 p {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: 1px;
+    left: 35px;
+    z-index: 1;
+}
+
+.box5_right {
+    justify-content: flex-end;
+}
+
+.box5_img1,
+.box5_img2,
+.box5_img3,
+.box5_img4,
+.box5_img5,
+.box5_img6 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+
+/* 박스5 */
+
+/* 박스6 */
+.box6 {
+    background-color: #23A7E3;
+    padding: 85px 0;
+}
+
+.box6_text {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box6_text a {
+    border: #fff 2px solid;
+    border-radius: 50px;
+    padding: 15px 60px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.box6_text a:hover {
+    color: #23A7E3;
+    background-color: #fff;
+}
+
+.box6 h1 {
+    margin: 0 0 85px 0;
+    color: #fff;
+}
+
+/* Container DIV */
+.simply-scroll {
+    width: 100%;
+    height: 306px;
+    margin-bottom: 1em;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+    width: 100%;
+    height: 306px;
+}
+
+/* Explicitly set height/width of each list item */
+.simply-scroll .simply-scroll-list li {
+    float: left;
+    /* Horizontal scroll only */
+    width: 293px;
+    height: 306px;
+    margin: 0 20px 85px 20px;
+}
+
+.simply-scroll .simply-scroll-list li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.box6 ul li{
+    overflow: hidden;
+    /* 이미지가 커지면 숨겨줌 */
+    position: relative;
+    /* 상품 설명 박스 기준 */
+}
+.box6 ul li:hover img{
+    transform: scale(1.2, 1.2);
+}
+.box6 ul li img{
+    display: block;
+    transition: 0.8s;
+}
+.b6_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: 0.8s;
+}
+.box6 ul li:hover .b6_text{
+    opacity: 1;
+}
+
+/* 박스6 */
+
+/* 박스7 */
+.box7 {
+    width: 1320px;
+    height: 920px;
+    margin: 210px auto;
+    position: relative;
+}
+
+.box7 h1 {
+    margin-bottom: 85px;
+}
+
+.box7_p2 {
+    position: absolute;
+    top: 500px;
+    left: 150px;
+}
+
+.box7_p1,
+.box7_p2 {
+    display: flex;
+}
+
+.box7_flex1 {
+    margin-left: 30px;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.box7_flex2 {
+    text-align: right;
+    margin: 200px 30px 0 0;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.box7_green {
+    color: #499D22;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.box7_blue {
+    color: #23A7E3;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.box7_p1:hover .box7_flex1 {
+    opacity: 1;
+}
+
+.box7_p2:hover .box7_flex2 {
+    opacity: 1;
+}
+
+/* 박스7 */
+
+/* 박스8 */
+.box8 {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+
+.box8 a {
+    font-size: 160px;
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+}
+
+.box8>ul>li>a {
+    display: block;
+    overflow: hidden;
+}
+
+.box8>ul>li>a>span {
+    position: relative;
+    transition: 0.5s;
+    display: inline-block;
+    color: #000;
+    width: 100%;
+}
+
+.box8>ul>li>a>span:nth-child(1)::before {
+    content: attr(data-hover);
+    position: absolute;
+    width: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -100%;
+    color: #499D22;
+}
+
+.nav>ul>li>a>span:nth-child(2)::before {
+    content: attr(data-hover);
+    position: absolute;
+    left: 50%;
+    top: -100%;
+}
+
+.box8>ul>li>a:hover>span:nth-child(1) {
+    transform: translateY(-100%);
+}
+
+.box8>ul>li>a:hover>span:nth-child(2) {
+    transform: translateY(100%);
+}
+
+/* 박스8 */
+
+/* 박스9 */
+.box9 {
+    background-color: #000;
+    font-size: 120px;
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 210px;
+    padding-top: 70px;
+}
+
+.box9_in {
+    position: relative;
+    width: 1320px;
+    margin: auto;
+}
+
+.box9_1 {
+    color: #fff;
+    font-size: 53px;
+}
+
+.box9_green {
+    color: #499D22;
+}
+
+.box9_blue {
+    color: #23A7E3;
+}
+
+.box9_text {
+    color: #fff;
+    width: 14500px;
+    animation: marquee 50s linear infinite;
+    margin-left: -300px;
+}
+
+.box9 .box9_track {
+    white-space: nowrap;
+    will-change: transform;
+    padding-bottom: 240px;
+    position: relative;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% + 1920px));
+    }
+}
+
+.box9_in>img {
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.box9_view a {
+    border: #CDD56D 2px solid;
+    border-radius: 50px;
+    padding: 15px 60px;
+    color: #CDD56D;
+    font-family: 'Pretendard';
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    transition: 0.5s;
+}
+
+.box9_view a:hover {
+    color: #000;
+    background-color: #CDD56D;
+}
+
+/* 박스9 */
+/* con */
+
+/* footer */
+footer {
+    background-color: #333;
+}
+
+.footer_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    padding: 85px 0 70px 0;
+}
+
+.footer_in img {
+    margin-top: 25px;
+}
+
+.footer_text {
+    display: flex;
+
+}
+
+.footer_left_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left_top li {
+    font-size: 20px;
+    color: #999;
+}
+
+.footer_left_top a {
+    color: #999;
+}
+
+.footer_left_top a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer_left_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left_bottom a {
+    opacity: 0.4;
+}
+
+.footer_left_bottom a:hover {
+    opacity: 1;
+}
+
+.footer_right {
+    color: #999;
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+/* footer */
