@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Regular-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: #000;
+    font-size: 50px;
+}
+
+/* 내비 */
+
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1 {
+    display: flex;
+}
+
+.nav1>li>a {
+    display: block;
+    margin: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav2 {
+    display: flex;
+    gap: 20px;
+    color: #333;
+}
+
+.nav1>li:hover>a {
+    color: #499D22;
+}
+
+.nav2 a:hover {
+    text-decoration: 1px #23A7E3 underline;
+    color: #23A7E3;
+}
+
+/* 서브내비 */
+.sub {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+
+.sub a {
+    display: block;
+    padding: 20px 30px;
+    color: #000;
+    border-bottom: 1px solid #999;
+    font-weight: 500;
+}
+
+.nav1>li {
+    position: relative;
+}
+
+.sub a:hover {
+    background-color: #000;
+    color: #499D22;
+}
+
+.nav1 li:hover .sub {
+    display: block;
+}
+
+/* 서브내비 */
+
+/* 내비 */
+
+/* 탑 텍스트 */
+.top_text_flex{
+    width: 1320px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.top_text_flex p{
+    color: #666;
+    text-align: right;
+}
+/* 탑 텍스트 */
+
+/* club pickle's 배너 */
+.club_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../club_images/club_main_banner.png) no-repeat center top / cover;
+    height: 654px;
+}
+.club_banner h1{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.3;
+    padding-bottom: 30px;
+}
+.club_banner p{
+    color: #fff;
+}
+/* club pickle's 배너 */
+
+/* 박스1 */
+.box1{
+    width: 1320px;
+    margin: 210px auto;
+    position: relative;
+    overflow: hidden;
+}
+.box1 img{
+    display: block;
+}
+.box1_text h1{
+    color: #fff;
+}
+.box1_text{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0 50px 50px 0;
+    color: #fff;
+    width: 660px;
+    height: 600px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 100px 0 100px 90px;
+    box-sizing: border-box;
+}
+.box1_text h3{
+    margin: 100px 0 20px 0;
+    font-size: 26px;
+}
+/* 박스1 */
+
+/* 박스2 */
+.box2{
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+.box2_in ul{
+    display: flex;
+    justify-content: space-between;
+}
+.box2 h1{
+    margin-bottom: 15px;
+}
+.b2_p{
+    font-size: 26px;
+    margin-bottom: 85px;
+}
+.box2 .box2_in p{
+    font-size: 20px;
+}
+.box2 .box2_in p, .box2 .box2_in h3{
+    color: #fff;
+}
+.b2_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* border-radius: 28px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.8s;
+}
+.box2 ul li:hover .b2_text{
+    opacity: 1;
+}
+.b2_text h3{
+    margin-bottom: 20px;
+}
+.box2_in ul li{
+    overflow: hidden;
+    position: relative;
+    border-radius: 32px;
+}
+.box2_in ul li:hover img{
+    transform: scale(1.2, 1.2);
+}
+.box2_in ul li img{
+    display: block;
+    transition: 0.8s;
+}
+/* 박스2 */
+
+/* 박스3 */
+.box3{
+    width: 1320px;
+    margin: 210px auto;
+}
+.box3 h1{
+    text-align: center;
+    margin-bottom: 85px;
+}
+.box3_in ul li{
+    width: 1320px;
+    height: 261px;
+    margin-bottom: 30px;
+    padding: 70px 0 80px 630px ;
+    box-sizing: border-box;
+}
+.b3_bg1{
+    background: url(../club_images/club_benefit1.png) no-repeat;
+}
+.b3_bg2{
+    background: url(../club_images/club_benefit2.png) no-repeat;
+}
+.b3_bg3{
+    background: url(../club_images/club_benefit4.png) no-repeat;
+}
+.box3_in{
+    color: #fff;
+}
+.box3_in h3{
+    margin-bottom: 20px;
+}
+/* 박스3 */
+
+/* 박스4 */
+.box4{
+    width: 1320px;
+    margin: 210px auto;
+}
+.box4_in{
+    width: 1102px;
+    margin: auto;
+}
+.box4_in h1{
+    padding-bottom: 40px;
+    border-bottom: 3px solid #707070;
+} 
+.box4 table{
+    width: 80%;
+    margin: 68px auto 0;
+    border-collapse: collapse;
+}
+.box4 th, .box8 td{
+    padding: 16px;
+}
+
+.box4 th{
+    font-size: 29px;
+    text-align: left;
+    font-weight: 500;
+}
+.box4 input, .box4 textarea{
+    background-color: #eee;
+    border: #eee 1px solid;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.box4 input[type="tel"]{
+    width: 80px;
+    text-align: center;
+}
+.box4 input[type="text"]{
+    width: 500px;
+}
+.box4 input[type="email"]{
+    width: 500px;
+}
+.box4 textarea{
+    margin-top: 7px;
+    width: 600px;
+    height: 100px;
+    resize: none;
+    font-family: 'Pretendard';
+}
+.enter{
+    text-align: center;
+    padding: 50px 0 68px 0;
+    border-bottom: #707070 3px solid;
+}
+.enter input{
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+}
+input[type="submit"]{
+    background-color: #499D22;
+}
+input[type="reset"]{
+    background-color: #000;
+}
+.right{
+    text-align: right;
+    margin-right: 200px;
+    margin-top: 10px;
+}
+.right a:hover{
+    text-decoration: underline;
+}
+/* 박스4 */
+
+/* footer */
+footer {
+    background-color: #333;
+}
+
+.footer_in {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 110px; */
+    padding: 85px 0 70px 0;
+}
+
+.footer_in img {
+    margin-top: 25px;
+}
+
+.footer_text {
+    display: flex;
+
+}
+
+.footer_left_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left_top li {
+    font-size: 20px;
+    color: #999;
+}
+
+.footer_left_top a {
+    color: #999;
+}
+
+.footer_left_top a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer_left_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left_bottom a {
+    opacity: 0.4;
+}
+
+.footer_left_bottom a:hover {
+    opacity: 1;
+}
+
+.footer_right {
+    color: #999;
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+/* footer */
